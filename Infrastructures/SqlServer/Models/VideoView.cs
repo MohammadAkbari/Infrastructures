@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace SqlServer.Models
+{
+    public partial class VideoView
+    {
+        public int VideoViewId { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public int VideoId { get; set; }
+        public DateTime DayDate { get; set; }
+        public int ViewCount { get; set; }
+
+        public Video Video { get; set; }
+    }
+}
